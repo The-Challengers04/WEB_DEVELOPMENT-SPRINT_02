@@ -1,0 +1,68 @@
+
+:root{
+    --cor-primaria:#55E5F6;
+    --cor-branca: #ffffff;
+    --cor-fonte-title:#4B4B4B;
+    --cor-fonte-text: #646464;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.navegacao{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 20px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.nav_left{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.nav_left > img {
+    height: 60px;
+    margin-right: 20px;
+    text-align: center;
+}
+.nav_left > a {
+    font-size: 1.2em;
+    margin-left: 20px;
+    color: var(--cor-fonte-text);
+    text-decoration: none;
+}
+nav a:hover {
+    color: #ccc;
+}
+
+#fazer_login{
+    color: var(--cor-primaria);
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 20px;
+    background: #FFFFFF;
+    border: 2px solid #55E5F6;
+    border-radius: 5px;
+}
+
+#cadastrar{
+    color: var(--cor-branca);
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 20px;
+    background: var(--cor-primaria);
+    border: 2px solid #55E5F6;
+    border-radius: 5px;
+}
