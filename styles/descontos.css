@@ -66,3 +66,49 @@ nav a:hover {
     border: 2px solid #55E5F6;
     border-radius: 5px;
 }
+
+
+.titulo > h1{
+    color: var(--cor-primaria);
+    font-weight: 600;
+    margin: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+.conteudo_principal{
+    display: flex;
+}
+
+.categorias{
+    width: 25vw;
+    margin: 10px;
+}
+.descontos__empresas{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 75vw;;
+}
+
+.empresas{
+    text-align:center;
+    border-radius: 20px;
+    width: 25rem;
+    height:20rem;
+    padding: 5px;
+    margin: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.empresas>h2{
+    text-decoration: none;
+    cursor:pointer;
+}
+.empresas>p{
+    padding: 10px;
+
+}
+.empresas:hover{
+    color: rgb(121, 203, 255);
+    
+}

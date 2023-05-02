@@ -66,3 +66,114 @@ nav a:hover {
     border: 2px solid #55E5F6;
     border-radius: 5px;
 }
+
+
+.welcome{
+    margin: 30px 0px;
+    background-color: var(--cor-primaria);
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.welcome img{
+    margin: 20px;
+    height: 60vh;
+}
+
+.welcome h1{   
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Seção 02 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.section02{
+    margin: 30px 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.conteudo02{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title_02{
+    font-weight: 200;
+    font-size: 38px;
+    text-align: center;
+    color: var(--cor-fonte-title);
+    display: flex;
+    margin-left: 100px;
+}
+
+.conteudo02{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 20px;
+}
+.conteudo02 > img{
+    margin: 50px;
+    height: 70vh;
+    margin: 10px 10px;
+
+}
+
+.conteudo02 > p{
+    padding: 100px;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: px;
+    text-align: center;
+    color: var(--cor-fonte-title);
+}
+
+/* Seção 03 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.section03{
+    margin: 30px 0px;
+    height: 100vh;
+}
+
+.section03 > div{
+    position: relative;
+    top: 200px;
+    width: 120vw;
+    height: 60vh;
+    left: -43.6px;
+    background: #55E5F6;
+    transform: rotate(-2deg);
+}
+.section03 > p{
+    position:relative;
+    top: -180px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 30px;
+    text-align: center;
+    color: var(--cor-branca);
+}
+
+/* footer !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+footer{
+    background-color: black;
+    height: 60vh;
+}
+
+footer > img{
+    padding-top: 20px;
+    display: flex;
+    margin-left: 100px;
+    height: 20vh;
+}
