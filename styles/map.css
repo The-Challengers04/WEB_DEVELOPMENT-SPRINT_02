@@ -1,0 +1,157 @@
+
+/* Cores usadas */
+:root{
+    --cor-primaria:#55E5F6;
+    --cor-branca: #ffffff;
+    --cor-fonte-title:#4B4B4B;
+    --cor-fonte-text: #646464;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color:var(--cor-background);
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+
+}
+
+.conteudo{
+    display: grid;
+    background-color: var(--cor-branca);
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "barra_pesquisa map";
+    width: 100%
+}
+
+.barra_pesquisa{
+    grid-area: barra_pesquisa ;
+    width: 100%;
+    margin: 10px;
+}
+.barra_pesquisa span a{
+    color: var(--cor-fonte-title);
+    font-size: 1.2rem;
+    padding:20px;
+    font-weight: 300;
+}
+
+.barra_pesquisa span a:hover{
+    color: black;
+}
+.barra_pesquisa h3{
+    color: var(--cor-fonte-title);
+    font-size: 1.3rem;
+    margin: 20px;
+    text-align: center;
+}
+.select {
+    position: relative;
+    min-width: px;
+}
+
+.select svg {
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #9098a9;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+
+.select select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 80%;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+    margin-left:30px;
+}
+
+.select select:required:invalid {
+    color: #5a667f;
+}
+
+.select select option {
+    color: #223254;
+}
+
+.select select option[value=""][disabled] {
+    display: none;
+}
+
+.select select:focus {
+    outline: none;
+    border-color: #07f;
+    box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+.select select:hover+svg {
+    stroke: #07f;
+}
+
+.sprites {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.label-card input{
+    width: 80%;
+    padding: 5px 5px;
+    border-bottom: 2px solid var(--cor-fonte-text);
+    transition: all .3s ease-out;
+    border-radius: 0;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left:30px;
+}
+
+.label-card{
+    position: relative;
+    padding-top: 5px;
+    margin-top: 5px;;
+    margin-bottom: 10px;
+  }
+  
+#botaoBuscar{
+    color: var(--cor-branca);
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background: var(--cor-fonte-text);
+    border: 2px solid;
+    border-radius: 4px;
+}
+
+.map{
+    grid-area: map;
+    height: 100vh;
+}

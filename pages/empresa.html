@@ -6,24 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inclui+</title>
     <link rel="shortcut icon" href="../img/logo_inclui+.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/descontos.css">
+    <link rel="stylesheet" href="../styles/empresa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <section class="navegacao">
-                <div class="nav_left">
-                    <img src="../img/logo_inclui+.png" alt="Logo do Site">
-                    <a href="./empresa.html" target="_blank">Empresa</a>
-                    <a href="./map.html" target="_blank">Viagem</a>
-                    <a href="./descontos.html" target="_blank">Descontos</a>
+            <div class="nav_left">
+                <div>
+                    <ul class="menu">
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="">Configurações</a></li>
+                        <li><a href="">Termos de uso</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                    <div class="nav_right">
-                    <button id="fazer_login" target="_blank">Fazer Login</button>
-                    <button id="cadastrar" target="_blank">Cadastrar</button>
-                </div>
-            </section>
+                <img src="../img/logo_inclui+.png" alt="Logo do Site">
+                <a href="./empresa.html" target="_blank">Empresa</a>
+                <a href="./map.html" target="_blank">Viagem</a>
+                <a href="./descontos.html" target="_blank">Descontos</a>
+            </div>
+            <div class="nav_right">
+                <button id="fazer_login" target="_blank">Fazer Login</button>
+                <button id="cadastrar" target="_blank">Cadastrar</button>
+            </div>
         </nav>
     </header>
+    <main>
+        <section>
+            <div class="secao01">
+                <form>
+                    <div class="container">
+                    <div class="card">
+                        <h1>Cadastre a sua empresa</h1>
+                        <div class="label-card">
+                            <input type="text" id="nome" placeholder=" " required />
+                            <label id="labelNome" for="nome">Nome</label>
+                        </div>
+
+                        <div class="label-card">
+                            <input type="text" id="usuario" placeholder=" " required />
+                            <label id="labelUsuario" for="usuario">Usuário</label>
+                        </div>
+                        <div class="label-card">
+                            <input type="password" id="senha" placeholder=" " required />
+                            <label id="labelSenha" for="senha">Senha</label>
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <div class="label-card">
+                            <input type="password" id="confirmSenha" placeholder=" " required />
+                            <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                            <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <div class="label-card">
+                            <input type="email" id="email" placeholder=" " required />
+                            <label id="email" for="email">Email</label>
+                        </div>
+                        <div>
+                            <button id="cadastrar_empresa">Cadastrar agora</button>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="section02">
+                <h2>Faça parte da mudança, seja nosso parceiro</h2>
+                <div class="conteudo02">
+                    <p>Seja nosso parceiro e mostre seu comprometimento com a inclusão, divulgando as 
+                        informações sobre os recursos de acessibilidade que sua empresa disponibiliza em nosso 
+                        aplicativo, alcançando um público mais amplo.</p>
+                    <img src="../img/img_section02.png" alt="time juntos em um objetivo">
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+        <img src="../img/logo_inclui+.png">
+        <p>Todos os direitos reservados a Inclui+ &copy; - 2023</p>
+    </footer>
+    <script src="../Js/script.js" defer></script>
 </body>
 </html>

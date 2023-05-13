@@ -11,18 +11,143 @@
 <body>
     <header>
         <nav>
-            <section class="navegacao">
-                    <img src="../img/logo_inclui+.png" alt="Logo do Site">
-                    <a href="./empresa.html" target="_blank">Empresa</a>
-                    <a href="./map.html" target="_blank">Viagem</a>
-                    <a href="./descontos.html" target="_blank">Descontos</a>
+            <div class="nav_left">
+                <div>
+                    <ul class="menu">
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="">Configurações</a></li>
+                        <li><a href="">Termos de uso</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                    <div class="nav_right">
-                    <button id="fazer_login" target="_blank">Fazer Login</button>
-                    <button id="cadastrar" target="_blank">Cadastrar</button>
-                </div>
-            </section>
+                <img src="../img/logo_inclui+.png" alt="Logo do Site">
+                <a href="./empresa.html" target="_blank">Empresa</a>
+                <a href="./map.html" target="_blank">Viagem</a>
+                <a href="./descontos.html" target="_blank">Descontos</a>
+            </div>
+            <div class="nav_right">
+                <button id="fazer_login" target="_blank">Fazer Login</button>
+                <button id="cadastrar" target="_blank">Cadastrar</button>
+            </div>
         </nav>
     </header>
+    <main>
+        <center>
+            <table style="width: 85vw; text-align: center;">
+              <!--BACKGROUND IMAGE no tr-->
+        
+              <tr style="background-image: var(--backgroundImage-1tr); background-size: cover;"><!--PRIMEIRA LINHA-->
+                <td><!--ACESSE A PLATAFORMA-->
+                  <div id="FirstBlock"
+                  onmouseover="zoom(this, 1.09)"
+                  onmouseleave="zoom(this, 1)">
+                    Acesse a plataforma
+                  </div>
+                </td>
+                <td>
+                  <a href="../pages/login.html">
+                    <button id="btnEntrar"
+                    onmouseover="changeBtnColor(this, '#689ade', 'white'); zoom(this, 1.29)"
+                    onmouseout="changeBtnColor(this, '#ffffff', 'black'); zoom(this, 1)">ENTRAR</button>
+                  </a>
+                </td>
+              </tr>
+        
+              <tr style="background-color: #e1eff2;"><!--SEGUNDA LINHA-->
+                <td style="background-size: cover;" > <img src="../img/logo_inclui+.png" width="60%">
+                </td>
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                  <center>
+                    <h2>Olá, nós somos a Inclui+</h2>
+                  </center>
+                  <p>Seja bem-vindo ao nosso espaço, aqui nós acreditamos que todos devem ter acesso aos mesmos serviços, 
+                    independentemente das suas limitações físicas. Foi por isso que nos unimos e decidimos criar o Inclui+.
+                    Com o Inclui+, você poderá facilmente encontrar estabelecimentos e serviços que oferecem acessibilidade, 
+                    como rampas de acesso, banheiros adaptados, elevadores, e muito mais. Além disso, você poderá conferir as avaliações
+                    de outros usuários, garantindo que você está escolhendo o melhor local para suas necessidades.</p>
+                </td>
+              </tr>
+        
+              <tr><!--TERCEIRA LINHA-->
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                  <h2>Contra o que lutamos?</h2>
+                  <p>A inclusão de pessoas com deficiência é um tema crucial no Brasil e em todo o mundo. Apesar de muitos avanços terem sido alcançados nas últimas 
+                    décadas, ainda há muito a ser feito para garantir que as pessoas com deficiência sejam totalmente incluídas na sociedade 
+                    e tenham acesso a oportunidades igualitárias. A falta de acessibilidade é uma das principais barreiras enfrentadas 
+                    pelas pessoas com deficiência. Muitas vezes, as infraestruturas e edifícios não são projetados para atender às 
+                    necessidades de pessoas com deficiência física, visual ou auditiva. Além disso, muitas vezes faltam recursos para 
+                    fornecer adaptações adequadas, como rampas de acesso, sinalização em braile ou intérpretes de língua de sinais.</p>
+                </td>
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                <img src="../img/contraoquelutamos.jpg" widht="35%" height="50%">
+                </td>
+              </tr>
+        
+              <tr style="background-color: #f1f1f1;"><!--QUARTA LINHA-->
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                <img src="../img/oquefalta.jpg" width="60%">
+                </td>
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                  <center>
+                    <h2>O que falta?</h2>
+                  </center>
+                  <p>Quando as instalações e serviços não são projetados para atender às necessidades das pessoas com deficiência, elas são
+                    frequentemente deixadas de fora de atividades e oportunidades que outras pessoas consideram naturais. Isso pode levar 
+                    a uma série de problemas, incluindo isolamento social, impedindo  que as pessoas com deficiência participem de eventos 
+                    sociais e comunitários, Dificuldades de mobilidade (por exemplo, a falta de rampas de acesso pode impedir que as pessoas
+                    em cadeiras de rodas acessem edifícios públicos ou privados, enquanto a falta de sinalização adequada pode dificultar a 
+                    navegação para pessoas com deficiência visual), limitações de emprego dificultando para elas competir por empregos e 
+                    avançar em suas carreiras</p>
+                </td>
+              </tr>
+        
+              <!-- QUINTA LINHA -->
+              <tr style="background-color: #e1eff2">
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                  <center>
+                    <h2>Nosso objetivo</h2><br>
+                  </center>
+                  <p>Criar um aplicativo que mapeie estabelecimentos que ofereçam suporte para pessoas com deficiência. Além disso, o 
+                    aplicativo contaria com um sistema de descontos oferecidos pelas empresas, que buscam aumentar o número de clientes e 
+                    fazer de um mundo justo e acessível para todos. O aplicativo consiste em uma página de reviews de restaurantes, museus e 
+                    outros locais culturais que informa ao usuário se o local possui infraestrutura adequada, como por exemplo cardápio em braile,
+                    elevadores ou rampas, se permite a entrada de cães guia, etc.</p>
+                </td>
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                  <img src="../img/nossoobjetivo.jpg" width="60%" alt="">
+                </td>
+              </tr>
+        
+              <!-- SEXTA LINHA -->
+              <tr>
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                  <img src="../img/parcerias.jpg" width="60%" alt="">
+                </td>
+                <td onmouseover="zoom(this, 1.09)"
+                onmouseleave="zoom(this, 1)">
+                  <center>
+                    <h2>Parcerias</h2><br>
+                  </center>
+                  <p>Ao fazer uma parceria com o Inclui+, as empresas poderiam disponibilizar informações sobre os recursos de acessibilidade que 
+                    oferecem, atraindo um público mais amplo e demonstrando seu compromisso com a inclusão. A empresa também poderia receber 
+                    feedbacks dos usuários do aplicativo, ajudando a identificar oportunidades de melhoria e aprimorando seu serviço.
+                    Por fim, a parceria com o Inclui+ pode ser uma excelente oportunidade para empresas que desejam investir em responsabilidade
+                    social e gerar impacto positivo na comunidade. Além de oferecer um serviço inclusivo e melhorar a experiência de seus 
+                    clientes, a empresa poderá se beneficiar com um aumento de lucro e de visibilidade no mercado.
+                  </p>
+                </td>
+              </tr>
+            </table>
+        </center>
+    </main>
+    <script src="../Js/script.js" defer></script>
 </body>
 </html>
