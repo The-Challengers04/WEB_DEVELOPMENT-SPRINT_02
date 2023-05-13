@@ -7,53 +7,69 @@
     <title>Inclui+</title>
     <link rel="shortcut icon" href="./img/logo_inclui+.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <section class="navegacao">
-                <div class="nav_left">
-                    <img src="./img/logo_inclui+.png" alt="Logo do Site">
-                    <a href="./pages/empresa.html" target="_blank">Empresa</a>
-                    <a href="./pages/map.html" target="_blank">Viagem</a>
-                    <a href="./pages/descontos.html" target="_blank">Descontos</a>
+            <div class="nav_left">
+                <div>
+                    <ul class="menu">
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Configurações</a></li>
+                        <li><a href="">Termos de uso</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                    <div class="nav_right">
-                    <button id="fazer_login" target="_blank">Fazer Login</button>
-                    <button id="cadastrar" target="_blank">Cadastrar</button>
-                </div>
-            </section>
+                <img src="./img/logo_inclui+.png" alt="Logo do Site">
+                <a href="./pages/empresa.html" target="_blank">Empresa</a>
+                <a href="./pages/map.html" target="_blank">Viagem</a>
+                <a href="./pages/descontos.html" target="_blank">Descontos</a>
+            </div>
+            <div class="nav_right">
+                <button id="fazer_login" target="_blank">Fazer Login</button>
+                <button id="cadastrar" target="_blank">Cadastrar</button>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="welcome">
-            <h1>Seja bem-vindo ao Inclui+</h1>
-            <img src="./img/welcome.png" alt="imagem de um time reunido">
+        <section>
+            <div class="welcome">
+                <h1>Seja bem-vindo ao Inclui+</h1>
+                <img src="./img/welcome.png" alt="imagem de um time reunido">
+            </div>
         </section>
-
         <!-- Seção 02 -->
-        <section class="section02">
-            <div class="title_02">
+        <section>
+            <div class="section02">
                 <h2>Nossa Missão</h2>
-            </div>
-            <div class="conteudo02">
-                <p>Transformar vidas por meio da tecnologia e inovação, fazendo da inclusão e 
-                    acessibilidade uma realidade para todos</p>
-                <img src="./img/img_section02.png" alt="time juntos em um objetivo">
+                <div class="conteudo02">
+                    <p>Transformar vidas por meio da tecnologia e inovação, fazendo da inclusão e 
+                            acessibilidade uma realidade para todos</p>
+                    <img src="./img/img_section02.png" alt="time juntos em um objetivo">
+                </div>
             </div>
         </section>
-        <section class="section03">
-            <div></div>
-            <p>O projeto Inclui+ tem como estratégia mapear e catalogar informações sobre os recursos 
-                de acessibilidade em diferentes estabelecimentos e serviços, tais como restaurantes, 
-                hotéis, cinemas, museus, entre outros. Para isso, utilizamos tecnologia de geolocalização
-                e crowdsourcing, incentivando os usuários do aplicativo a contribuírem com informações e
-                avaliações sobre os locais que visitam.</p>
+        <!-- Section 03 -->
+        <section>
+            <div class="section03">
+                <div>
+                    <span></span>
+                </div>
+                <p>O projeto Inclui+ tem como estratégia mapear e catalogar informações sobre os recursos 
+                    de acessibilidade em diferentes estabelecimentos e serviços, tais como restaurantes, 
+                    hotéis, cinemas, museus, entre outros. Para isso, utilizamos tecnologia de geolocalização
+                    e crowdsourcing, incentivando os usuários do aplicativo a contribuírem com informações e
+                    avaliações sobre os locais que visitam.</p>
+            </div>
         </section>
     </main>
     <footer>
         <img src="img/logo_inclui+.png">
+        <p>Todos os direitos reservados a Inclui+ &copy; - 2023</p>
     </footer>
-    <script src="./JS/menu.js"></script>
+    <script src="./Js/script.js"></script>
 </body>
 </html>

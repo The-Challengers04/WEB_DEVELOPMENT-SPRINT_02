@@ -7,32 +7,39 @@
     <title>Inclui+</title>
     <link rel="shortcut icon" href="../img/logo_inclui+.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/descontos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <section class="navegacao">
-                <div class="nav_left">
-                    <img src="../img/logo_inclui+.png" href="../index.html"alt="Logo do Site">
-                    <a href="./pages/empresa.html" target="_blank">Empresa</a>
-                    <a href="./pages/map.html" target="_blank">Viagem</a>
-                    <a href="./pages/descontos.html" target="_blank">Descontos</a>
+            <div class="nav_left">
+                <div>
+                    <ul class="menu">
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Configurações</a></li>
+                        <li><a href="">Termos de uso</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                    <div class="nav_right">
-                    <button id="fazer_login">Fazer Login</button>
-                    <button id="cadastrar">Cadastrar</button>
-                </div>
-            </section>
+                <img src="../img/logo_inclui+.png" alt="Logo do Site">
+                <a href="./empresa.html" target="_blank">Empresa</a>
+                <a href="./map.html" target="_blank">Viagem</a>
+                <a href="./descontos.html" target="_blank">Descontos</a>
+            </div>
+            <div class="nav_right">
+                <button id="fazer_login" target="_blank">Fazer Login</button>
+                <button id="cadastrar" target="_blank">Cadastrar</button>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="titulo">
+        <div class="conteudo_principal">
             <h1>Descontos e direitos</h1>
-        </section>
-        <section class="conteudo_principal">
-            <section class="categorias">
-                <h1>Categorias</h1>
-                <div>
+            <div class="conteudo_geral">
+                <div class="conteudo_left">
+                    <h1>Categorias</h1>
                     <select class="lista_estados">
                         <option value="">Selecione um estado</option>
                         <option value="Acre">Acre</option>
@@ -63,68 +70,76 @@
                         <option value="Sergipe">Sergipe</option>
                         <option value="Tocantins">Tocantins</option>
                     </select>
-                </div>
-                <div class="lista_categorias">
-                    <ul class="li">Alimentação</ul>
-                    <ul class="li">Entretenimento</ul>
-                    <ul class="li">Livaria</ul>
-                    <ul class="li">Serviços</ul>
-                </div>
-            </section>
-            <section class="descontos">
-                <div class="descontos__empresas">
-                    <div class="empresas">
-                        <img src="../img/img-restaurante.jpg" width="80%" height="=60%">
-                        <h2> Restaurante</h2>
-                        <p> Esta empresa oferece o desconto de 10% para PCD</p>
-                    </div>
-                    <div class="empresas">
-                        <img src="../img/img-shopping.jpg" width="80%" height="=60%">
-                        <h2> Shopping</h2>
-                        <p> Serviços de acessibilidades estão disponíveis nesse estabelecimento</p>
-                    </div>
-                    <div class="empresas">
-                        <img src="../img/img-bk.jpg" width="80%" height="=60%">
-                        <h2> Burguer King</h2>
-                        <p> Esta empresa oferece o desconto 15% no cardápio para PCD</p>
+                    <div class="lista_categorias">
+                        <ul>
+                            <li>Alimentação</li>
+                            <li>Entretenimento</li>
+                            <li>Livraria</li>
+                            <li>Serviços</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="descontos__empresas">
-                    <div class="empresas">
-                        <img src="../img/img-cinemark.jpg" width="80%" height="=60%">
-                        <h2>Cinemark</h2>
-                        <p> Esta marca oferece o desconto de 50% nos ingressos para PCD</p>
+                <!-- Descontos -->
+                <div class="conteudo_right">
+                    <div class="descontos__empresas">
+                        <div class="empresas">
+                            <img src="../img/img-restaurante.jpg" width="80%" height="=60%">
+                            <h2> Restaurante</h2>
+                            <p> Esta empresa oferece o desconto de 10% para PCD</p>
+                        </div>
+                        <div class="empresas">
+                            <img src="../img/img-shopping.jpg" width="80%" height="=60%">
+                            <h2> Shopping</h2>
+                            <p> Serviços de acessibilidades estão disponíveis nesse estabelecimento</p>
+                        </div>
+                            <div class="empresas">
+                            <img src="../img/img-bk.jpg" width="80%" height="=60%">
+                            <h2> Burguer King</h2>
+                            <p> Esta empresa oferece o desconto 15% no cardápio para PCD</p>
+                        </div>
                     </div>
-                    <div class="empresas">
-                        <img src="../img/img-estadio.jpg" width="80%" height="=60%">
-                        <h2> Estádio do Morumbi</h2>
-                        <p>Este estabelecimento oferece o desconto de 30% nos ingressos para PCD</p>
+                    <div class="descontos__empresas">
+                        <div class="empresas">
+                            <img src="../img/img-cinemark.jpg" width="80%" height="=60%">
+                            <h2>Cinemark</h2>
+                            <p> Esta marca oferece o desconto de 50% nos ingressos para PCD</p>
+                        </div>
+                        <div class="empresas">
+                            <img src="../img/img-estadio.jpg" width="80%" height="=60%">
+                            <h2> Estádio do Morumbi</h2>
+                            <p>Este estabelecimento oferece o desconto de 30% nos ingressos para PCD</p>
+                        </div>
+                        <div class="empresas">
+                            <img src="../img/img-restaurante02.jpg" width="80%" height="=60%">
+                            <h2> Restaurante</h2>
+                            <p> Esta empresa oferece o desconto 20% no cardápio</p>
+                        </div>
                     </div>
-                    <div class="empresas">
-                        <img src="../img/img-restaurante02.jpg" width="80%" height="=60%">
-                        <h2> Restaurante</h2>
-                        <p> Esta empresa oferece o desconto 20% no cardápio</p>
+                    <div class="descontos__empresas">
+                        <div class="empresas">
+                            <img src="../img/img-bares.jpg" width="80%" height="40%">
+                            <h2> Bar do Bom</h2>
+                            <p> Este estabelecimento oferece descontos de 10% para PCD</p>
+                        </div>
+                        <div class="empresas">
+                            <img src="../img/img-livraria.jpg" width="80%" height="40%">
+                            <h2> Livraria</h2>
+                            <p> Esta instituição oferece descontos, recursos e serviços para PCD</p>
+                        </div>
+                        <div class="empresas">
+                            <img src="../img/img-roupas.jpg" width="80%" height="40%">
+                            <h2> Loja de Roupas</h2>
+                            <p> Esta empresa oferece desconts e serviços para PCD</p>
+                        </div>
                     </div>
                 </div>
-                <div class="descontos__empresas">
-                    <div class="empresas">
-                        <img src="../img/img-bares.jpg" width="80%" height="40%">
-                        <h2> Bar do Bom</h2>
-                        <p> Este estabelecimento oferece descontos de 10% para PCD</p>
-                    </div>
-                    <div class="empresas">
-                        <img src="../img/img-livraria.jpg" width="80%" height="40%">
-                        <h2> Livraria</h2>
-                        <p> Esta instituição oferece descontos, recursos e serviços para PCD</p>
-                    </div>
-                    <div class="empresas">
-                        <img src="../img/img-roupas.jpg" width="80%" height="40%">
-                        <h2> Loja de Roupas</h2>
-                        <p> Esta empresa oferece desconts e serviços para PCD</p>
-                    </div>
-                </div>
-            </section>
-        <section>
+            </div>
+        </div>
     </main>
+    <footer>
+        <img src="../img/logo_inclui+.png">
+        <p>Todos os direitos reservados a Inclui+ &copy; - 2023</p>
+    </footer>
+    <script src="../Js/script.js"></script>
 </body>
 </html>
