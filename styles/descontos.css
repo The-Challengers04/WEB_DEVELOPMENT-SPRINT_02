@@ -176,6 +176,7 @@ nav a:hover {
 /* Aqui são os cards !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .conteudo_right{
     grid-column: 2/3;
+    
 }
 .descontos__empresas{
     display: flex;
