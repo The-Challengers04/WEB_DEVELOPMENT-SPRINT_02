@@ -178,20 +178,24 @@ nav a:hover {
     grid-column: 2/3;
 }
 .descontos__empresas{
-    margin-right: 40px;
     display: flex;
-    flex-direction: row;
-    width: 80%;
+    flex-flow: row wrap;
+    align-items: self-start;
 }
 
 .empresas{
     text-align:center;
     border-radius: 20px;
-    width: 25rem;
-    height:20rem;
+    width: 20rem;
+    min-height:20rem;
     padding: 10px;
     margin: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.empresas > img {
+    width: 80%;
+    height: 60%;
 }
 
 .empresas>h2{
