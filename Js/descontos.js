@@ -1,5 +1,12 @@
 const divDescontosEmpresas = document.querySelector(".descontos__empresas");
 const listaCateg = document.querySelector(".lista_categorias");
+const btnLoadDescontos = document.createElement("button")
+let btnLoadDescHTML = null;
+btnLoadDescontos.id = "btnLoadDesc";
+btnLoadDescontos.innerText = "CarregarMais";
+
+let qtdItensCarregados = 0;
+let qtdItensByLoad = 3;
 
 Descontos_Empresa = [
     {
@@ -86,9 +93,49 @@ function createCard(element){
     divDescontosEmpresas.appendChild(div);
 }
 
-Descontos_Empresa.forEach(element => {
-    createCard(element);
-});
+function carregarDescontos(){
+    let thereIsMoroDescontos = true;
+    let UntilThisIndex = qtdItensCarregados + qtdItensByLoad;
+
+    if(btnLoadDescHTML != null) // Verifica se o botão de carregar ja existe
+        divDescontosEmpresas.removeChild(btnLoadDescHTML); // Deleta o botão ja existente
+
+    
+    while(qtdItensCarregados < UntilThisIndex)
+    {
+        try
+        {
+        createCard(Descontos_Empresa[qtdItensCarregados]);
+        qtdItensCarregados++;
+        }catch(error) // Tentou acessar uma posição inexistente 
+        {
+            thereIsMoroDescontos = false;
+            break;
+        }
+    }
+
+    if(thereIsMoroDescontos)
+    {
+        if(Descontos_Empresa.length > qtdItensCarregados)
+            btnLoadDescHTML = divDescontosEmpresas.appendChild(btnLoadDescontos);
+    }
+    else
+    {
+    }
+}
+
+carregarDescontos();
+if(btnLoadDescHTML != null)
+    btnLoadDescHTML.addEventListener("click",()=>{
+        carregarDescontos();
+    })
+// for (let i = 0; i < Descontos_Empresa.length; i++) {
+//     createCard(Descontos_Empresa[i]);
+//     qtdItensCarregados++;
+// }
+// Descontos_Empresa.forEach(element => {
+//     createCard(element);
+// });
 
 listaCateg.addEventListener("click",(evt)=>{
     divDescontosEmpresas.innerHTML = "";
@@ -99,3 +146,6 @@ listaCateg.addEventListener("click",(evt)=>{
         }
     });
 });
+
+
+// Carregar mais descontos:
