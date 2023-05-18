@@ -1,28 +1,22 @@
-/* Cores e fontes usadas */
 :root{
     --cor-primaria:#55E5F6;
     --cor-branca: #ffffff;
     --cor-fonte-title:#4B4B4B;
     --cor-fonte-text: #646464;
-    --backgroundImage-1tr: url('../img/image1.jpg');
 }
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
+
+
 body{
-    background-color:var(--cor-background);
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: 'Inter', sans-serif;
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
     overflow-x: hidden;
 }
-/* Nav !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-nav{
-	height: 90px;
+
+.navegacao{
+	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -30,13 +24,12 @@ nav{
 	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-/* Conteudo nav esquerdo */
 .nav_left{
     display: flex;
     text-align: center;
     align-items: center;
 }
-.nav_left >a> img {
+.nav_left > img {
     height: 60px;
     margin-right: 20px;
     text-align: center;
@@ -50,7 +43,7 @@ nav{
 nav a:hover {
     color: #ccc;
 }
-/* Conteudo nav direito */
+
 #fazer_login{
     color: var(--cor-primaria);
     padding: 10px 20px;
@@ -73,53 +66,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-table {
-    display: block;
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-collapse: inherit;
-    border-spacing: 0;
-    border-color: inherit;
-    text-align: left;
-    font-weight: inherit;
-    -webkit-border-horizontal-spacing: 0;
-    -webkit-border-vertical-spacing: 0;
-  }
-
-  td {
-    width: 50%;
-    height: 50vh;
-    border-top: 10px transparent;
-  }
-
-  #FirstBlock {
-    margin-left: 15%;
-    padding: 20% 0;
-    width: 70%;
-    text-align: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.411);
-    color: black;
-    font-size: 60px;
-  }
-
-  #pcdBlock {
-    color: white;
-    font-size: 55px;
-  }
-
-  #btnEntrar {
-    text-decoration: none;
-    color: black;
-    padding: 10px 40px;
-    background-color: #ffffff;
-    border-radius: 30px;
-  }
-
-  /* footer !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* footer !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 footer {
     background-color: black;
