@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,36 @@
     <link rel="shortcut icon" href="../img/logo_inclui+.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/cadastro.css">
 </head>
+
 <body>
-    
+    <div class="login">
+        <div class="container-left">
+            <img id="img-left" src="../img/img-login-cad.jpg" alt="imagem lateral esquerda">
+        </div>
+        <div class="container-rigth">
+            <div class="caixa-form">
+                <form class="formLogin" action=" ">
+                    <h1 class="tituloForm">Faça seu cadastro</h1>
+                    <div class="formGroupInicial field ">
+                        <input type="input" class="form__field" placeholder="nome" name="nome" id="nome" required oninput="checkSpace(this)"><label for="nome" class="form__label">Nome Completo</label>
+                    </div>
+                    <div class="formGroupInicial field ">
+                        <input type="input" class="form__field" placeholder="celular" name="celular" id="celular" required oninput="checkSpace(this)"><label for="celular" class="form__label">Celular</label>
+                    </div>
+                    <div class="formGroupInicial field ">
+                        <input type="input" class="form__field" placeholder="email" name="email" id="email" required oninput="checkSpace(this)"><label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="formGroupInicial field ">
+                        <input type="input" class="form__field" placeholder="password" name="password" id="password" required=""><label for="password" class="form__label">Senha</label>
+                    </div>
+                    <div class="formGroupInicial field ">
+                        <input type="input" class="form__field" placeholder="confirm_password" name="confirm_password" id="confirm_password" required=""><label for="confirm_password" class="form__label">Confirmar Senha</label>
+                    </div>
+                    <input type="submit" class="enviar" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

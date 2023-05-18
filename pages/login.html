@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,29 @@
     <link rel="shortcut icon" href="../img/logo_inclui+.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/login.css">
 </head>
+
 <body>
-    
+    <div class="login">
+        <div class="container-left">
+            <img id="img-left" src="../img/img-login-cad.jpg" alt="imagem lateral esquerda">
+        </div>
+        <div class="container-rigth">
+            <div class="caixa-form">
+                <form class="formLogin" action="">
+                    <img class="logo" alt="logo" src="../img/logo_inclui+.png">
+                    <h1 class="tituloForm">Faça seu login</h1>
+                    <div class="formGroupInicial field ">
+                        <input type="input" class="form__field" placeholder="email" name="email" id="email" required oninput="checkSpace(this)"><label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="formGroupInicial field ">
+                        <input type="input" class="form__field" placeholder="password" name="password" id="password" required=""><label for="password" class="form__label">Senha</label>
+                    </div>
+                    <input type="submit" class="enviar" value="Entrar">
+                    <a class="link2" href="/pages/cadastro.html">Nao tem cadastro? &gt; </a>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
