@@ -32,59 +32,13 @@ nav{
 	padding: 10px 20px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-/* Menu */
-header .menu li a{
-    color: var(--cor-fonte-text);
-    width: 0px;
-    height: 0px;
-    font-size:1.3rem;
-}
-
-header .menu li a::after{
-    content: '';
-    width: 0px;
-    height: 0px;
-    display: block;
-    border-bottom: 4px solid transparent;
-    transition: .9s;
-}
-
-header .menu li a:hover::after{
-    width: 100%;
-    height: 0px;
-    padding: 0px;
-    border-bottom: 4px solid var(--cor-primaria);
-
-}
-.fa-bars {
-    color: var(--cor-fonte-text);
-    font-size: 2rem;
-    margin-right: 40px;
-}
-header .menu{
-    display:none;
-}
-header .menu.ativado{
-    background: linear-gradient(rgba(255, 255, 255, 0.922), rgb(255, 255, 255) );
-    position: absolute;
-    display:grid;
-    top: 60px;
-    color: white;
-    z-index: 1;
-    padding: 30px;
-    left: 20px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    border-radius: 0 0 4px 4px;
-    animation: sobreSection .8s ease-in-out forwards;
-}
 /* Conteudo nav esquerdo */
 .nav_left{
     display: flex;
     text-align: center;
     align-items: center;
 }
-.nav_left > img {
+.nav_left > a>img {
     height: 60px;
     margin-right: 20px;
     text-align: center;
@@ -208,22 +162,51 @@ nav a:hover {
 
 /* footer !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-footer{
-    background-color: #000000;
-    padding: 30px;
-}
-
-footer img{
-    width: 20%;
-    display:flex;
-    justify-content: center;
+footer {
+    background-color: black;
+    padding: 20px;
+    color: var(--cor-branca);
+  }
+  
+  .footer-section img{
+    width:220px;
+    height: 170px;;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  .footer-section p{
+    color: var(--cor-fonte-text);
+  
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: var(--cor-fonte-text);
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
     text-align: center;
-}
-
-footer p{
-    text-align: center;
-    color: #fff;
-    margin: 30px auto;
-    font-size: 1.5rem;
-    font-family: 'Poppins';
-}
+    margin-top: 20px;
+    color: var(--cor-fonte-text);
+  }
+  
