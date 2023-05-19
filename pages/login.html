@@ -8,6 +8,7 @@
     <title>Inclui+</title>
     <link rel="shortcut icon" href="../img/logo_inclui+.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/login.css">
+    <script src="../Js/login.js" defer></script>
 </head>
 
 <body>
@@ -17,17 +18,21 @@
         </div>
         <div class="container-rigth">
             <div class="caixa-form">
-                <form class="formLogin" action="">
+                <form class="formLogin">
                     <img class="logo" alt="logo" src="../img/logo_inclui+.png">
                     <h1 class="tituloForm">Faça seu login</h1>
                     <div class="formGroupInicial field ">
-                        <input type="input" class="form__field" placeholder="email" name="email" id="email" required oninput="checkSpace(this)"><label for="email" class="form__label">Email</label>
+                        <input type="text" class="form__field" placeholder="email" name="email" id="email"><label for="email" class="form__label">Email</label>
                     </div>
                     <div class="formGroupInicial field ">
-                        <input type="input" class="form__field" placeholder="password" name="password" id="password" required=""><label for="password" class="form__label">Senha</label>
+                        <input type="password" class="form__field" placeholder="password" name="password" id="password"><label for="password" class="form__label">Senha</label>
                     </div>
-                    <input type="submit" class="enviar" value="Entrar">
-                    <a class="link2" href="/pages/cadastro.html">Nao tem cadastro? &gt; </a>
+                    <fieldset>
+                        <div>
+                            <button class="enviar" id="btnEntrar">Entrar</button>
+                            <a class="link2" href="/pages/cadastro.html">Nao tem cadastro? &gt; </a>
+                        </div>
+                    </fieldset>
                 </form>
             </div>
         </div>
