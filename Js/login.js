@@ -6,6 +6,7 @@ const senhaInput = document.querySelector("#password");
 const labSenha = document.querySelector("label[for='password']");
 emailInput.div = form.children[2]; // Criando um novo atributo do elemento para armazenar a sua div
 senhaInput.div = form.children[3];  // Criando um novo atributo do elemento para armazenar a sua div
+const eye = document.querySelector("#eye");
 const btnEntrar = document.querySelector("#btnEntrar");
 
 // DEFININDO CONSTANTES
@@ -129,5 +130,17 @@ emailInput.addEventListener("keydown",()=>{resetElement(emailInput,labEmail);});
 
 senhaInput.addEventListener("keydown",()=>{resetElement(senhaInput,labSenha);});
 
+eye.addEventListener("click", () => {
+    if(eye.className == "fa fa-eye") // Revelar Senha
+    {
+        senhaInput.type = "password";
+        eye.className = "fa fa-eye-slash";
+    }
+    else // Ocultar Senha
+    {
+        senhaInput.type = "text";
+        eye.className = "fa fa-eye";
+    }
+})
 
 btnEntrar.addEventListener("click",checkCredenciais)

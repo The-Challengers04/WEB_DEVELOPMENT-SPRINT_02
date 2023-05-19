@@ -194,6 +194,14 @@ fieldset{
     font-weight: bold;
 }
 
+#eye{
+    position: absolute;
+    top: 1.5em;
+    right: 0.4em;
+    cursor: pointer;
+    color: #272262;
+  }
+
 @media (max-width: 900px) {
     .container-left {
         display: none;
