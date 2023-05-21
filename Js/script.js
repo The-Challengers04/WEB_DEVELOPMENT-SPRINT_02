@@ -1,14 +1,15 @@
 // barra de menu
-function menuBars(){
-    const ativarMenu = document.querySelector('.fa-bars');
-    const navMenu = document.querySelector('header .menu');
+const btnMobile = document.getElementById('btn-mobile');
 
-    ativarMenu.addEventListener('click', ()=>{
-        ativarMenu.classList.toggle('fa-x');
-        navMenu.classList.toggle('ativado');
-    })
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    const active = nav.classList.contains('active');
 }
-menuBars();
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
 // Buscar locais no mapa
 function buscarPontos(){

@@ -8,32 +8,34 @@
     <title>Inclui+</title>
     <link rel="shortcut icon" href="../img/logo_inclui+.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/cadastro.css">
+    <script src="../Js/cadastro.js" defer></script>
 </head>
 
 <body>
     <div class="login">
         <div class="container-left">
-            <img id="img-left" src="../img/img-login-cad.jpg" alt="imagem lateral esquerda">
         </div>
         <div class="container-rigth">
             <div class="caixa-form">
-                <form class="formLogin" action=" ">
+                <form class="formLogin" action=" " id="cadastroForm">
                     <h1 class="tituloForm">Faça seu cadastro</h1>
                     <div class="formGroupInicial field ">
-                        <input type="input" class="form__field" placeholder="nome" name="nome" id="nome" required oninput="checkSpace(this)"><label for="nome" class="form__label">Nome Completo</label>
+                        <input type="text" class="form__field" placeholder="nome" name="nome" id="nome" required ><label for="nome" class="form__label">Nome Completo</label>
                     </div>
                     <div class="formGroupInicial field ">
-                        <input type="input" class="form__field" placeholder="celular" name="celular" id="celular" required oninput="checkSpace(this)"><label for="celular" class="form__label">Celular</label>
+                        <input  class="form__field" placeholder="celular" name="celular" id="celular" type="tel" maxlength="15" minlength="15" onkeyup="handlePhone(event)" required ><label for="celular" class="form__label">Celular</label>
                     </div>
                     <div class="formGroupInicial field ">
-                        <input type="input" class="form__field" placeholder="email" name="email" id="email" required oninput="checkSpace(this)"><label for="email" class="form__label">Email</label>
+                        <input type="email" class="form__field" placeholder="email" name="email" id="email" required ><label for="email" class="form__label">Email</label>
                     </div>
                     <div class="formGroupInicial field ">
-                        <input type="input" class="form__field" placeholder="password" name="password" id="password" required=""><label for="password" class="form__label">Senha</label>
+                        <input type="password" class="form__field" placeholder="senha" name="senha" id="senha" required=""><label for="senha" class="form__label">Senha</label>
                     </div>
                     <div class="formGroupInicial field ">
-                        <input type="input" class="form__field" placeholder="confirm_password" name="confirm_password" id="confirm_password" required=""><label for="confirm_password" class="form__label">Confirmar Senha</label>
+                        <input type="password" class="form__field" placeholder="confirmar_senha" name="confirmar_senha" id="confirmar_senha" required=""><label for="confirmar_senha" class="form__label">Confirmar Senha</label>
                     </div>
+                    <span id="span_confirmarSenha">Senhas diferentes</span>
+                    <span id="span_cadastroConfirmado">Usuario cadastrado</span>
                     <input type="submit" class="enviar" value="Cadastrar">
                 </form>
             </div>
