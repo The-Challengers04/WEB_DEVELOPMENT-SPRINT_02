@@ -10,17 +10,25 @@
 </head>
 <body>
   <header>
-    <nav>
-        <div class="nav_left" aria-label="Navegação">
-          <a href="../index.html" target="_blank"><img src="../img/logo_inclui+.png" alt="Logo do Site"></a>
-          <a href="./empresa.html" target="_blank" aria-label="Empresa">Empresa</a>
-          <a href="./map.html" target="_blank" aria-label="Viagem">Viagem</a>
-          <a href="./descontos.html" target="_blank" aria-label="Descontos">Descontos</a>
-          <a href="./sobre.html" target="_blank" aria-label="Sobre">Sobre</a>
+    <nav aria-label="Navegação">
+        <nav id="nav">
+            <button id="btn-mobile"><span id="hamburger"></span></button>
+            <div class="nav_left layout">
+                <a href="../pages/empresa.html" aria-label="Empresa">Empresa</a>
+                <a href="../pages/map.html" aria-label="Viagem">Viagem</a>
+                <a href="../pages/descontos.html" aria-label="Descontos">Descontos</a>
+                <a href="../pages/sobre.html" aria-label="Sobre">Sobre</a>
+            </div>
+        </nav>
+        <a href="../index.html" class="logo"><img src="../img/logo_inclui+.png" alt="Logo do Site"></a>
+        <div class="nav_left">
+            <a href="../pages/empresa.html" aria-label="Empresa">Empresa</a>
+            <a href="../pages/map.html" aria-label="Viagem">Viagem</a>
+            <a href="../pages/descontos.html" aria-label="Descontos">Descontos</a>
+            <a href="../pages/sobre.html" aria-label="Sobre">Sobre</a>
         </div>
         <div class="nav_right">
-          <button id="fazer_login" target="_blank" aria-label="Fazer login">Fazer Login</button>
-          <button id="cadastrar" target="_blank" aria-label="Cadastrar">Cadastrar</button>
+            <a href="../pages/login.html"><button id="fazer_login"  aria-label="Fazer login">Login</button></a>
         </div>
     </nav>
 </header>

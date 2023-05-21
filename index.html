@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,32 @@
     <title>Inclui+</title>
     <link rel="shortcut icon" href="./img/logo_inclui+.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="./Js/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav aria-label="Navegação">
+            <nav id="nav">
+                <button id="btn-mobile"><span id="hamburger"></span></button>
+                <div class="nav_left layout">
+                    <a href="../pages/empresa.html" aria-label="Empresa">Empresa</a>
+                    <a href="../pages/map.html" aria-label="Viagem">Viagem</a>
+                    <a href="../pages/descontos.html" aria-label="Descontos">Descontos</a>
+                    <a href="../pages/sobre.html" aria-label="Sobre">Sobre</a>
+                </div>
+            </nav>
+            <a href="../index.html" class="logo"><img src="../img/logo_inclui+.png" alt="Logo do Site"></a>
             <div class="nav_left">
-                <a href="./index.html" target="_blank"><img src="./img/logo_inclui+.png" alt="Logo do Site"></a>
-                <a href="./pages/empresa.html" target="_blank" aria-label="Empresa">Empresa</a>
-                <a href="./pages/map.html" target="_blank" aria-label="Viagem">Viagem</a>
-                <a href="./pages/descontos.html" target="_blank" aria-label="Descontos">Descontos</a>
-                <a href="./pages/sobre.html" target="_blank" aria-label="Sobre">Sobre</a>
+                <a href="../pages/empresa.html" aria-label="Empresa">Empresa</a>
+                <a href="../pages/map.html" aria-label="Viagem">Viagem</a>
+                <a href="../pages/descontos.html" aria-label="Descontos">Descontos</a>
+                <a href="../pages/sobre.html" aria-label="Sobre">Sobre</a>
             </div>
             <div class="nav_right">
-                <button id="fazer_login" target="_blank" aria-label="Fazer login">Fazer Login</button>
-                <button id="cadastrar" target="_blank" aria-label="Cadastrar">Cadastrar</button>
+                <a href="../pages/login.html"><button id="fazer_login"  aria-label="Fazer login">Login</button></a>
             </div>
         </nav>
     </header>
@@ -32,74 +42,69 @@
         <section>
             <div class="container01" aria-label="seção um">
                 <h1>Seja bem-vindo ao Inclui+</h1>
-                <img src="./img/welcome.png" alt="Imagem de um time reunido">
-            </div>
+                <img src="./img/welcome.png" alt="Imagem de um time reunido"> </div>
         </section>
         <!-- Seção 02 -->
         <section>
             <div class="container02" aria-label="seção dois">
                 <h2>Nossa Missão</h2>
                 <div class="conteudo02">
-                    <p>Transformar vidas por meio da tecnologia e inovação, fazendo da inclusão e 
-                            acessibilidade uma realidade para todos</p>
-                    <img src="./img/img_section02.png" alt="Time juntos em um objetivo">
-                </div>
+                    <p>Transformar vidas por meio da tecnologia e inovação, fazendo da inclusão e acessibilidade uma realidade para todos</p>
+                    <img src="./img/img_section02.png" alt="Time juntos em um objetivo"> </div>
             </div>
         </section>
         <!-- Section 03 -->
         <section>
             <div class="container03" aria-label="seção três">
-                <p>O projeto Inclui+ tem como estratégia mapear e catalogar informações sobre os recursos 
-                    de acessibilidade em diferentes estabelecimentos e serviços, tais como restaurantes, 
-                    hotéis, cinemas, museus, entre outros. Para isso, utilizamos tecnologia de geolocalização
-                    e crowdsourcing, incentivando os usuários do aplicativo a contribuírem com informações e
-                    avaliações sobre os locais que visitam.</p>
+                <p>O projeto Inclui+ tem como estratégia mapear e catalogar informações sobre os recursos de acessibilidade em diferentes estabelecimentos e serviços, tais como restaurantes, hotéis, cinemas, museus, entre outros. Para isso, utilizamos tecnologia
+                    de geolocalização e crowdsourcing, incentivando os usuários do aplicativo a contribuírem com informações e avaliações sobre os locais que visitam.</p>
             </div>
         </section>
         <!-- Section 04 -->
         <section>
             <div class="container04">
                 <div class="column01">
-                    <span aria-hidden="true"></span>
+                    <img src="img/tecnologia-img-home.jpg">
                     <p>Usamos a tecnologia para ter um futuro melhor, com uma cidade inteligente e acessível para todos.</p>
                 </div>
                 <div class="column02">
-                    <span aria-hidden="true"></span>
+                    <img src="img/logo_inclui+.png">
                     <p>Incentivamos e promovemos a acessibilidade</p>
                 </div>
                 <div class="column03">
-                    <span aria-hidden="true"></span>
+                    <img src="../img/acordo-img-home.jpg">
                     <p>Geramos a empatia e as relações humanas em prol de um bem maior. Promover a relação entre as empresas e PcD.</p>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-content">
-          <div class="footer-section">
-            <img src="../img/logo_inclui+.png">
-          </div>
-          <div class="footer-section">
-            <h3>Navegação</h3>
-            <ul>
-              <li><a href="./index.html" target="_blank">Página inicial</a></li>
-              <li><a href="./pages/empresa.html" target="_blank">Empresa</a></li>
-              <li><a href="./pages/descontos.html" target="_blank">Descontos</a></li>
-              <li><a href="./pages/map.html" target="_blank">Viagem</a></li>
-              <li><a href="./pages/sobre.html" target="_blank">Sobre</a></li>
-              <li><a href="./pages/termos.html" target="_blank">Termos</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Contato</h3>
-            <p>Email: exemplo@inclui+.com</p>
-            <p>Telefone: (99) 9999-9999</p>
-          </div>
+            <div class="footer-section">
+                <img src="../img/logo_inclui+.png"> </div>
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="./index.html" target="_blank">Página inicial</a></li>
+                    <li><a href="./pages/empresa.html" target="_blank">Empresa</a></li>
+                    <li><a href="./pages/descontos.html" target="_blank">Descontos</a></li>
+                    <li><a href="./pages/map.html" target="_blank">Viagem</a></li>
+                    <li><a href="./pages/sobre.html" target="_blank">Sobre</a></li>
+                    <li><a href="./pages/LGPD.html" target="_blank">Termos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: exemplo@inclui+.com</p>
+                <p>Telefone: (99) 9999-9999</p>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>Todos os direitos reservados a Inclui+ &copy; - 2023</p>
         </div>
-      </footer>      
-    <script src="./Js/script.js"></script>
+    </footer>
+
 </body>
+
 </html>
